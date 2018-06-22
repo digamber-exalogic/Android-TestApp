@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/parentLayout">
+
+    <RelativeLayout
+        android:id="@+id/view_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FA315B">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="55dp"
+            android:text="Delete"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="55dp" />
+
+        <ImageView
+            android:id="@+id/delete_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="18dp"
+            app:srcCompat="@drawable/ic_delete_white_24dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="18dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/view_foreground"
+        android:background="@android:color/white"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgEmailProfilePic"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.2"
+            android:layout_gravity="center"
+            android:src="@color/fab_button"/>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txProfileName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.60"
+                    android:ellipsize="end"
+                    android:text="Arjun Kapoor"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+
+                <ImageView
+                    android:id="@+id/imgAttachment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.095"
+                    android:visibility="visible"
+                    app:srcCompat="@drawable/ic_attachment_black_24dp"/>
+
+                <TextView
+                    android:id="@+id/txTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:layout_marginEnd="4dp"
+                    android:text="01:35 Am"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:layout_marginRight="4dp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txSubject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="Subject"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </RelativeLayout>
+    
+</FrameLayout>

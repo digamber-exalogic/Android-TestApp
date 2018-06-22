@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_notice"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".Fragments.AdminNoticeFragment"
+    android:layout_marginBottom="50dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txNoData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="NO DATA AVAILABLE"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#fff"
+        android:visibility="gone"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewNotice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

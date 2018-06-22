@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/menuEmailAttach"
+        android:title="Email_Attach"
+        android:icon="@drawable/my_white_attachment"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/menuEmailSend"
+        android:title="Search"
+        android:icon="@drawable/my_white_send"
+        app:showAsAction="always"/>
+
+</menu>

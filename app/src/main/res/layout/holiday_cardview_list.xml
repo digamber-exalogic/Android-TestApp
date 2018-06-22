@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="135dp"
+    app:cardCornerRadius="4dp"
+    android:layout_margin="4dp"
+    android:elevation="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:weightSum="1"
+            android:orientation="horizontal">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/imgHoliday"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center|end"
+                android:foregroundGravity="center"
+                app:civ_border_width="4dp"
+                android:layout_marginTop="3dp"
+                app:civ_shadow="true"
+                app:civ_shadow_radius="8"
+                app:civ_shadow_color="#8BC34A"
+                android:src="@drawable/blueawesome"
+                android:layout_marginStart="10dp"
+                tools:ignore="NestedWeights" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="3dp"
+                android:layout_gravity="start|bottom"
+                android:gravity="center"
+                android:layout_weight="0.7"
+                android:weightSum="1"
+                >
+
+                <TextView
+                    android:id="@+id/txHolidayName"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    android:textSize="20sp"
+                    android:layout_gravity="start"
+                    android:gravity="center|start"
+                    android:textColor="#000"
+                    android:text="Independance Day"/>
+
+                <TextView
+                    android:id="@+id/txBranchName"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.2"
+                    android:text="Branch"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/txStartDate"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:text="15-Aug-2018"/>
+
+                    <TextView
+                        android:id="@+id/txDivider"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.01"
+                        android:layout_gravity="center"
+                        android:gravity="center|top"
+                        android:text="|"/>
+
+                    <TextView
+                        android:id="@+id/txEndDate"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:layout_gravity="start"
+                        android:gravity="end"
+                        android:text="15-Aug-2018"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:orientation="horizontal">
+
+            <!--<android.support.design.button.MaterialButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="280dp"
+                android:layout_weight="0.1"
+                android:layout_marginLeft="290dp" />
+
+            <android.support.design.button.MaterialButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="0.1"-->
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/btnHolidayDelete"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="8dp"
+                    android:elevation="8dp"
+                    android:src="@drawable/ic_circle_remove"
+                    app:layout_constraintBottom_toBottomOf="@+id/btnHolidayEdit"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <ImageView
+                    android:id="@+id/btnHolidayEdit"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:elevation="8dp"
+                    android:src="@drawable/ic_circle_edit"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btnHolidayDelete"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.card.MaterialCardView>

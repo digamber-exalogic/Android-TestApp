@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context=".Activities.AdminMenuEmailInboxShowActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="horizontal">
+    
+    <TextView
+        android:id="@+id/txSubjectName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:text="Subject"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_weight="0.2"
+        />
+
+    <TextView
+        android:id="@+id/txEmailBoxType"
+        android:layout_marginStart="4dp"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="Inbox"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="10sp"
+        android:textColor="#131313"
+        android:background="#e4e4e4"
+        android:layout_marginLeft="2dp"
+        />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#d2d2d2"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/llsuperDetailLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgEmailProfilePic"
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center|top"
+                    android:layout_weight="0.2"
+                    android:src="@drawable/profileicon" />
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:layout_marginStart="8dp"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txProfileName"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.60"
+                            android:ellipsize="end"
+                            android:text="Sender's Name"
+                            android:textStyle="bold"
+                            android:textSize="17sp"/>
+
+                        <ImageView
+                            android:id="@+id/imgAttachment"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.095"
+                            android:visibility="gone"
+                            app:srcCompat="@drawable/ic_attachment_black_24dp"/>
+
+                        <TextView
+                            android:id="@+id/txTime"
+                            android:visibility="visible"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.3"
+                            android:layout_marginEnd="4dp"
+                            android:text="01:35 Am"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textSize="12sp"
+                            android:layout_marginRight="4dp"
+                            />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txSubject"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Reciever's Name"
+                        android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/txSmallBody"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Email body message for only in one line."
+                        />
+
+                    <TextView
+                        android:id="@+id/txViewDetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="View details"
+                        android:textSize="12sp"
+                        android:textColor="#0270ff"
+                        android:visibility="visible"
+                        />
+
+                    <TextView
+                        android:id="@+id/txHideView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hide details"
+                        android:textSize="12sp"
+                        android:textColor="#0270ff"
+                        android:visibility="gone"/>
+
+                    <LinearLayout
+                        android:id="@+id/llHideDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txFromEmail"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2"
+                            android:ellipsize="end"
+                            android:text="From:"
+                            android:textSize="12sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/txFromEmailId"
+                            android:visibility="visible"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8"
+                            android:layout_marginEnd="4dp"
+                            android:text="digamber.baral@gmail.com"
+                            android:layout_gravity="center"
+                            android:gravity="start"
+                            android:textSize="12sp"
+                            android:layout_marginRight="4dp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txToEmail"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2"
+                            android:ellipsize="end"
+                            android:text="To:"
+                            android:textSize="12sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/txToEmailId"
+                            android:visibility="visible"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8"
+                            android:layout_marginEnd="4dp"
+                            android:text="deepak.mishra@gmail.com"
+                            android:layout_gravity="center"
+                            android:gravity="start"
+                            android:textSize="12sp"
+                            android:layout_marginRight="4dp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txDate"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2"
+                            android:ellipsize="end"
+                            android:text="Date:"
+                            android:textSize="12sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/txDateValue"
+                            android:visibility="visible"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8"
+                            android:layout_marginEnd="4dp"
+                            android:text="June 15, 2018"
+                            android:layout_gravity="center"
+                            android:gravity="start"
+                            android:textSize="12sp"
+                            android:layout_marginRight="4dp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txTimeEmail"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2"
+                            android:ellipsize="end"
+                            android:text="Time:"
+                            android:textSize="12sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/txTimeValue"
+                            android:visibility="visible"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8"
+                            android:layout_marginEnd="4dp"
+                            android:text="6:25 AM"
+                            android:layout_gravity="center"
+                            android:gravity="start"
+                            android:textSize="12sp"
+                            android:layout_marginRight="4dp"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+            <TextView
+                android:id="@+id/txMessageBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Email body message"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:textColor="#464646"
+                android:visibility="visible"
+                />
+
+            <ImageView
+                android:id="@+id/imgEmailAttachment"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="15dp"
+                android:layout_gravity="center"
+                android:src="@drawable/file_attachment"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    
+</ScrollView>

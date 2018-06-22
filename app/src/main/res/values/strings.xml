@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">INMEGH-KMCT</string>
+
+    <string name="sign_up_label">Sign Up</string>
+    <string name="log_in_label">Log In</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="password_hint">Password</string>
+    <string name="email_hint">Email</string>
+    <string name="confirm_hint">Confirm Password</string>
+
+    <string name="title_activity_bottom_bar_admin">BottomBarActivityAdmin</string>
+    <string name="title_home">Home</string>
+    <string name="title_mail">Substitute</string>
+    <string name="title_event">Event</string>
+    <string name="title_notice">Notice</string>
+    <string name="title_menu">Menu</string>
+    <string name="holidaySearchBox">search...</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="activity_label">Shipping Address</string>
+
+    <string name="label_name">Holiday Name</string>
+    <string name="label_startDate">Start Date</string>
+    <string name="label_endDate">End Date</string>
+    <string name="label_date">Date</string>
+    <string name="label_choosePic">CHOOSE PHOTO</string>
+    <string name="label_save">UPDATE</string>
+    <string name="label_editName">EDIT HOLIDAY</string>
+    <string name="label_createName">CREATE HOLIDAY</string>
+    <string name="label_createRejectName">REJECTION REASON</string>
+    <string name="label_rejectName">Enter reason here... </string>
+
+    <string name="error_string">Field must not be empty.</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="action_delete">Delete</string>
+    <string name="title_activity_mail_tabbed">MailTabbedActivity</string>
+    <string name="tab_text_1">Inbox</string>
+    <string name="tab_text_2">Sentbox</string>
+    <string name="tab_text_3">Trash</string>
+
+    <string name="sms_tab_text_1">Teaching</string>
+    <string name="sms_tab_text_2">Students</string>
+    <string name="sms_tab_text_3">Parents</string>
+    <string name="sms_tab_text_4">Non-Teaching</string>
+
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_admin_menu_email_inbox_show">AdminMenuEmailInboxShowActivity
+    </string>
+    <string name="title_activity_admin_menu_email_sentbox_show">AdminMenuEmailSentboxShowActivity
+    </string>
+</resources>

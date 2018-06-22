@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.exalogicsolutions.inmegh_kmct">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/treeicon2"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Activities.AdminDashboardActivity" />
+        <activity
+            android:name=".Activities.BottomBarActivityAdmin"
+            android:label="@string/title_activity_bottom_bar_admin" />
+        <activity
+            android:name=".Activities.AdminMenuCollegeInfo"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activities.AdminMenuTimetable"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activities.AdminMenuHolidays"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activities.AdminMenuLeave"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activities.AdminMenuExam"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activities.AdminMenuMail"
+            android:label="Email"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activities.AdminMenuSms"
+            android:label="Sms"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.AdminMenuStudentAttendance"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activities.MailTabbedActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.AdminMenuEmailCompose"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activities.AdminMenuEmailInboxShowActivity"
+            android:label="      "
+            android:windowSoftInputMode="adjustPan"/>
+    </application>
+
+</manifest>
